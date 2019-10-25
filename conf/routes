@@ -13,10 +13,12 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 #ApplicationController
-GET    /hello           controllers.ApplicationController.hello()
+GET    /hello           controllers.ApplicationController.hello
 GET    /echo/:msg       controllers.ApplicationController.echo(msg)
 #reverseRouting and redirect
 GET    /v2/hello        controllers.ApplicationController.helloRedirect()
+#view
+GET    /products        controllers.ApplicationController.listProducts
 
 
 
